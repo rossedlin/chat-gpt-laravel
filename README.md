@@ -22,13 +22,23 @@ I built a Chat GPT App that allows you to... using Laravel... In 5 minutes.
 
 - `composer require openai-php/client`
 
+
+- `php artisan make:controller IndexController`
+
 ## Code
 
+- `app/Http/Controllers/IndexController.php`
+- `routes/web.php`
+
+- `resources/views/index.blade.php`
+- `resources/views/receive.blade.php`
+- `resources/views/send.blade.php`
 
 ## Env
 
 
 ## CSS
 
+- `public/style.css`
 
 ## Deploy
