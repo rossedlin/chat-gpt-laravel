@@ -59,7 +59,7 @@
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "Bearer API_KEY"
+        "Authorization": "Bearer {{env('CHAT_GPT_KEY')}}"
       },
       data: JSON.stringify({
         "model": "gpt-3.5-turbo",
