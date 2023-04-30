@@ -8,6 +8,10 @@
 
 I built a Chat GPT App that allows you to... using Laravel... In 5 minutes.
 
+## Resources
+
+https://github.com/openai-php/client
+
 ## Requirements
 
 - PHP v8.1
@@ -20,21 +24,9 @@ I built a Chat GPT App that allows you to... using Laravel... In 5 minutes.
 - `cd chat-gpt-laravel`
 
 
-- `composer require openai-php/client`
-
-
-- `php artisan make:controller IndexController`
-
 ## Code
 
-- `app/Http/Controllers/IndexController.php`
-- `routes/web.php`
-
 - `resources/views/index.blade.php`
-- `resources/views/receive.blade.php`
-- `resources/views/send.blade.php`
-
-## Env
 
 
 ## CSS
