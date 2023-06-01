@@ -9,7 +9,8 @@ on:
 jobs:
   laravel-tests:
 
-    runs-on: rossedlin/php-apache:8.1
+    runs-on: ubuntu-latest
+    container: rossedlin/php-apache:8.1-nodejs-18
 
     steps:
       - name: Install Dependencies
