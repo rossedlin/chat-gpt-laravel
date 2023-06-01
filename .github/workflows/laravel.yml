@@ -16,6 +16,9 @@ jobs:
       - name: Verify PHP
         run: php -v
 
+      - name: List all files
+        run: ls -la
+
       - name: Install Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
 
