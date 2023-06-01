@@ -42,4 +42,4 @@ jobs:
         env:
           DB_CONNECTION: sqlite
           DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit --coverage-text --colors=never --verbos
+        run: vendor/bin/phpunit --coverage-text --colors=never
