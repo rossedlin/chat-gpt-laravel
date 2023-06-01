@@ -55,23 +55,15 @@
     event.preventDefault();
 
     $.ajax({
-      url: "https://api.openai.com/v1/chat/completions",
+      url: "/chat",
       method: 'POST',
       headers: {
-        "Content-Type": "application/json",
-        "Authorization": "Bearer {{env('CHAT_GPT_KEY')}}"
+        'X-CSRF-TOKEN': "{{csrf_token()}}"
       },
-      data: JSON.stringify({
+      data: {
         "model": "gpt-3.5-turbo",
-        "messages": [
-          {
-            "role": "user",
-            "content": $("form #message").val()
-          }
-        ],
-        "temperature": 0,
-        "max_tokens": 2048
-      })
+        "content": $("form #message").val()
+      }
     }).done(function (res) {
       console.log(res.choices[0].message.content)
 
