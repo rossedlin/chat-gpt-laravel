@@ -6,10 +6,10 @@ on:
       - completed
 jobs:
   deploy:
-    name: Test
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Git Pull
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
-        run: ssh -p $SSH_PORT $SSH_USER@$SSH_IP 'cd ~/github/chat-gpt-laravel && git pull;'
+        run: ssh -p $HOSTINGER_SSH_PORT $HOSTINGER_SSH_USER@$HOSTINGER_SSH_IP 'cd ~/github/chat-gpt-laravel && git pull;'
