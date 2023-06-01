@@ -10,7 +10,7 @@ jobs:
   tests:
 
     runs-on: ubuntu-latest
-#    container: rossedlin/php-apache:8.1
+    container: rossedlin/php-apache:8.1
 
     steps:
       - uses: actions/checkout@v3
