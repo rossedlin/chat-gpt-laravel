@@ -32,5 +32,3 @@ https://github.com/openai-php/client
 ## CSS
 
 - `public/style.css`
-
-## Deploy
