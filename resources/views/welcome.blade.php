@@ -54,6 +54,15 @@
   $("form").submit(function (event) {
     event.preventDefault();
 
+    //Stop empty messages
+    if ($("form #message").val().trim() === '') {
+      return;
+    }
+
+    //Disable form
+    $("form #message").prop('disabled', true);
+    $("form button").prop('disabled', true);
+
     $.ajax({
       url: "/chat",
       method: 'POST',
@@ -65,7 +74,6 @@
         "content": $("form #message").val()
       }
     }).done(function (res) {
-      console.log(res.choices[0].message.content)
 
       //Populate sending message
       $(".messages > .message").last().after('<div class="right message">' +
@@ -82,6 +90,10 @@
       //Cleanup
       $("form #message").val('');
       $(document).scrollTop($(document).height());
+
+      //Enable form
+      $("form #message").prop('disabled', false);
+      $("form button").prop('disabled', false);
     });
   });
 
