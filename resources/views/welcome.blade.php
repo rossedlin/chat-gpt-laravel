@@ -3,7 +3,7 @@
 <head>
   <title>Chat GPT Laravel | Code with Ross</title>
   <link rel="icon" href="https://assets.edlin.app/favicon/favicon.ico"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -40,7 +40,7 @@
   <!-- Footer -->
   <div class="bottom">
     <form>
-      <input type="text" id="message" name="message" placeholder="Enter message..." autocomplete="off" inputmode="none">
+      <input type="text" id="message" name="message" placeholder="Enter message..." autocomplete="off">
       <button type="submit"></button>
     </form>
   </div>
