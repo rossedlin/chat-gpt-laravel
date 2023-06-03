@@ -40,7 +40,7 @@
   <!-- Footer -->
   <div class="bottom">
     <form>
-      <input type="text" id="message" name="message" placeholder="Enter message..." autocomplete="off">
+      <input type="text" id="message" name="message" placeholder="Enter message..." autocomplete="off" inputmode="none">
       <button type="submit"></button>
     </form>
   </div>
