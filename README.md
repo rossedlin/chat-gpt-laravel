@@ -20,8 +20,9 @@ https://github.com/openai-php/client
 
 ## Setup
 
-- `composer create-project laravel/laravel chat-gpt-laravel`
+- `composer create-project laravel/laravel chat-gpt-laravel-youtube`
 - `cd chat-gpt-laravel`
+- `php artisan make:controller ChatController`
 
 
 ## Code
