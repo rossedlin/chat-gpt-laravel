@@ -27,6 +27,8 @@ https://github.com/openai-php/client
 
 ## Code
 
+- `routes/web.php`
+- `app/Http/Controllers/ChatController.php`
 - `resources/views/index.blade.php`
 
 
